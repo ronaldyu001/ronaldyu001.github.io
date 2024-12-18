@@ -159,17 +159,17 @@ body{
 }
 
 .image.one{
-    background-image: url("/backgrounds/Sofi.jpg");
+    background-image: url("./backgrounds/Sofi.jpg");
     left: 0vw;
 }
 
 .image.two{
-    background-image: url("/backgrounds/UnderBridge.jpg");
+    background-image: url("./backgrounds/UnderBridge.jpg");
     right: 0vw;
 }
 
 .image.three{
-    background-image: url("/backgrounds/fall_trees.jpg");
+    background-image: url("./backgrounds/fall_trees.jpg");
     left: 32vw;
     width: 36vw;
 }
@@ -194,7 +194,7 @@ body{
     left: 47vw;
     bottom: -50vh;
     height: 3vw;
-    background-image: url("/backgrounds/LinkedIn_logo_initials.jpg");
+    background-image: url("./backgrounds/LinkedIn_logo_initials.jpg");
     background-size: 2vw;
 }
 
@@ -203,7 +203,7 @@ body{
     left: 51vw;
     bottom: -50.8vh;
     height: 3.5vw;
-    background-image: url("/backgrounds/gmail_logo.jpg");
+    background-image: url("./backgrounds/gmail_logo.jpg");
     background-size: 2.2vw;
 }
 

@@ -6,8 +6,8 @@ Purpose:
 
 body{
     margin: 0;
-    width: 100vw;
-    height: 150vh;
+    width: 100dvw;
+    height: 150dvh;
     background-color: rgb(49, 39, 39);
     overscroll-behavior: none;
 }

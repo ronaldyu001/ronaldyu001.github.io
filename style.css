@@ -7,7 +7,7 @@ Purpose:
 body{
     margin: 0;
     width: 100dvw;
-    min-height: 150dvh;
+    min-height: 150%;
     background-color: rgb(49, 39, 39);
     overscroll-behavior: none;
 }

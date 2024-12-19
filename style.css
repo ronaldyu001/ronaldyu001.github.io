@@ -9,6 +9,7 @@ body{
     width: 100vw;
     height: 150vh;
     background-color: rgb(49, 39, 39);
+    overscroll-behavior: none;
 }
 
 pre{

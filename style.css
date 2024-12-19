@@ -11,118 +11,122 @@ body{
     background-color: rgb(49, 39, 39);
 }
 
+pre{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 /*****************************
     Title Formatting
 *****************************/
-.title{
+.initials{
+    display: grid;
+    grid-template-columns: 100vw;
+
     position: absolute;
-    left: 43vw;
-    bottom: 60vh;
-    width: auto;
-    height: auto;
+    top: 5vh;
     text-align: center;
 
     font-family: 'Times New Roman', Times, serif;
-    font-size: 10vw;
+    font-size: 20vh;
     color: white;
+
+    z-index: 3;
 }
 
+
+
 .name{
+    display: grid;
+    grid-template-columns: 100vw;
+
     position: absolute;
-    left: 35vw;
-    bottom: 58vh;
-    width: auto;
-    height: auto;
+    top: 28vh;
     text-align: center;
 
     font-family: 'Times New Roman', Times, serif;
-    font-size: 3vw;
+    font-size: 4vh;
     color: white;
+
+    z-index: 3;
 }
 
 .subtitle{
+    display: grid;
+    grid-template-columns: 100vw;
+
     position: absolute;
-    left: 43vw;
-    bottom: 52vh;
-    width: auto;
-    height: auto;
+    top: 34vh;
     text-align: center;
 
     font-family: 'Times New Roman', Times, serif;
-    font-size: 1.2vw;
+    font-size: 2vh;
     color: white;
+
+    z-index: 3;
+}
+
+
+/*****************************
+    Bubble Formatting
+*****************************/
+/* bubbles */
+.bubbles_container{
+    display: grid;
+    grid-template-columns: 15vw 15vw 15vw;
+    grid-template-rows: 15vw;
+    gap: 15vw;
+    padding: 0vh 12.5vw;
+
+    position: absolute;
+    top: 60vh;
+    align-items: center;
+
+    z-index: 2;
+}
+
+.bubble{
+    overflow: hidden;
+
+    height: 15vw;
+    width: 15vw;
+
+    background-color: white;
+    border: solid 0.5vw rgb(49, 39, 39);
+    border-radius: 50%;
 }
 
 
 /*****************************
     Menu Formatting
 *****************************/
-/* menu bubbles */
-.menuBubbles{
-    overflow: hidden;
+.menu_container{
+    display: grid;
+    grid-template-columns: 15vw 15vw 15vw;
+    grid-template-rows: 15vw;
+    gap: 15vw;
+    padding: 0vh 12.5vw;
+
     position: absolute;
-    left: 6.5vw;
-    bottom: 0vh;
-    height: auto;
-    width: 90vw;
-    z-index: 2;
+    top: 60vh;
     align-items: center;
+
+    z-index: 3;    
 }
 
-.menuBubbles li{
-    overflow: hidden;
-    display: inline-block;
-    background-color: rgb(255, 255, 255);
-    border-radius: 50%;
-    border: .6vw solid;
-    border-color: rgb(49, 39, 39);
-    height: 14vw;
-    width: 14vw;
-    margin: 0vh 6vw;
+.menu{
+    font-size: 80%;
+    font-family: 'Times New Roman', Times, serif;
+
+    text-align: center;
 }
 
-.menuBubbles a{
-    overflow: hidden;
-    padding: 0vh 50vw;
-}
-
-/* menu hover effects */
-.menuBubbles a :hover{
-    transition: transform 0.4s ease;
-    transform: scale(1.1);
-}
-
-.menu a :hover{
-    transition: transform 0.4s ease;
-    transform: scale(1.1);
-    
-}
-
-.bubbleLable{
-    /* text formatting */
-    overflow: hidden;
-    position: absolute;
-    bottom: 8.4vw;
-    z-index: 3;
-    font-weight: bolder;
-    color: rgb(49, 39, 39);
-}
-
-.bubbleLable.one{
-    /* text formatting */
-    left: 20.2vw;
-}
-
-.bubbleLable.two{
-    /* text formatting */
-    left: 46.2vw;
-}
-
-.bubbleLable.three{
-    /* text formatting */
-    left: 72.4vw;
-}
 
 /*****************************
     Border Formatting
@@ -130,29 +134,24 @@ body{
 
 .border{
     /* background formatting */
-    position: absolute;
-    left: 0vw;
-    bottom: 40vh;
-    height: 1vh;
-    width: 100vw;
+    position: relative;
     background-color: white;
-    z-index: 2;
-}
-
-.border.two{
-    /* background formatting */
-    bottom: -30vh;
 }
 
 
 /*****************************
     Image Formatting
 *****************************/
-.image{
+.image_container{
+    display: grid;
+    grid-template-columns: 33vw 34vw 33vw;
+    grid-template-rows: 1vh 70vh 1vh;
+
     position: absolute;
-    bottom: -28.84vh;
-    height: 68.7vh;
-    width: 32vw;
+    top: 50vh;
+}
+
+.image{
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;
@@ -160,19 +159,17 @@ body{
 
 .image.one{
     background-image: url("./backgrounds/Sofi.jpg");
-    left: 0vw;
 }
 
 .image.two{
-    background-image: url("./backgrounds/UnderBridge.jpg");
-    right: 0vw;
+    background-image: url("./backgrounds/fall_trees.jpg");
 }
 
 .image.three{
-    background-image: url("./backgrounds/fall_trees.jpg");
-    left: 32vw;
-    width: 36vw;
+    background-image: url("./backgrounds/UnderBridge.jpg");
 }
+
+
 
 
 /*****************************

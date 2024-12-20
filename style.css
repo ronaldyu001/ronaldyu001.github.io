@@ -3,11 +3,21 @@ Purpose:
     - provides the styling for the website
     
 ***************************************************/
+header{
+    width: 100%;
+    height: 50%;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .5fr .275fr .175fr;
+
+    margin: 0%;
+    padding: 5%;
+    gap: 5%;    
+}
 
 body{
     margin: 0;
-    width: 100dvw;
-    min-height: 150%;
     background-color: rgb(49, 39, 39);
     overscroll-behavior: none;
 }
@@ -27,47 +37,36 @@ pre{
     Title Formatting
 *****************************/
 .initials{
-    display: grid;
-    grid-template-columns: 100vw;
-
-    position: absolute;
-    top: 5vh;
-    text-align: center;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
 
     font-family: 'Times New Roman', Times, serif;
-    font-size: 20vh;
     color: white;
+    font-size: 15vh;
+
+    height: 100%;    
 
     z-index: 3;
 }
 
-
-
 .name{
-    display: grid;
-    grid-template-columns: 100vw;
-
-    position: absolute;
-    top: 28vh;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 
     font-family: 'Times New Roman', Times, serif;
-    font-size: 4vh;
     color: white;
+    font-size: 3vh;
 
     z-index: 3;
 }
 
 .subtitle{
-    display: grid;
-    grid-template-columns: 100vw;
-
-    position: absolute;
-    top: 34vh;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 
     font-family: 'Times New Roman', Times, serif;
-    font-size: 2vh;
+    font-size: 1.5vh;
     color: white;
 
     z-index: 3;
@@ -80,14 +79,14 @@ pre{
 /* bubbles */
 .bubbles_container{
     display: grid;
-    grid-template-columns: 15vw 15vw 15vw;
-    grid-template-rows: 15vw;
-    gap: 15vw;
-    padding: 0vh 12.5vw;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10%;
 
+    width: 100%;
+    height: 20%;
     position: absolute;
-    top: 60vh;
-    align-items: center;
+    top: 60%;
 
     z-index: 2;
 }

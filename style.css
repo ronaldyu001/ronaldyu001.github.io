@@ -268,12 +268,11 @@ pre{
 .logo_container{
     /* type */
     display: grid;
-    grid-template-rows: 10vh;
-    grid-template-columns: 10vw 10vw;
+    grid-template-rows: 12vw;
+    grid-template-columns: 12vw 12vw;
 
     /* positioning */
     justify-self: center;
-
 }
 
 .logo{
@@ -287,26 +286,27 @@ pre{
 
     /* appearance */
     border-radius: 50%;
+    border-color: rgb(255, 255, 255);
 
     /* settings */
     background-repeat: no-repeat;
 }
 .logo.linkedIn{
     /* background */
-    background-image: url("./backgrounds/LinkedIn_logo_initials.jpg");
-    background-size: 2vw;
+    background-image: url("./backgrounds/LinkedIn_logo_circle.png");
+    background-size: 3.75vw;
+
+    /* positioning */
+    background-position: center center;
 }
 
 .logo.email{
     /* background */
     background-image: url("./backgrounds/gmail_logo.jpg");
-    background-size: 2.2vw;
-}
+    background-size: 3vw;
 
-
-/* logo hover effects */
-.logo.linkedIn :hover{
-    transform: scale(1.1);
+    /* positioning */
+    background-position: center center;
 }
 
 

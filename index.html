@@ -23,64 +23,52 @@ Purpose:
     <!-- header content -->
     <header>
         <!-- Website Title -->
-        <div class="initials">
-            <p>RY</p>
-        </div>
-        <div class="name">
-            <p><pre>R o n a l d   Y u</pre></p>
-        </div>
-        <div class="subtitle">
-            <p><pre>D e n v e r ,  C O</pre></p>
-        </div>
+        <h1><a class="initials">RY</a></h1>
+        <h2><a class="name"><pre>R o n a l d  Y u</pre></a></h2>
+        <h3><a class="location"><pre>Denver , CO</pre></a></h3>
     </header>
 
     <!-- main content -->
     <main>
-        <section>
-            <!-- pictures container -->
-            <div class="image_container">
-                <!-- border -->
-                <div class="border"></div>
-                <div class="border"></div>
-                <div class="border"></div>
-
-                <!-- images  -->
-                <div class="image one"></div>
-                <div class="image two"></div>
-                <div class="image three"></div>
-
-                <!-- border -->
-                <div class="border"></div>
-                <div class="border"></div>
-                <div class="border"></div>
-            </div>
-        
         <!-- navigation menu -->
         <nav>
-            <div class="bubbles_container">
-                <a href="./index.html" class="bubble one"></a>
-                <a href="./projects.html" class="bubble two"></a>
-                <a href="./experience.html" class="bubble three"></a>
-            </div>
+            <section class="image_container">
+                <!-- pictures container -->
+                    <!-- border -->
+                    <div class="border"></div>
+                    <div class="border"></div>
+                    <div class="border"></div>
+    
+                    <!-- images  -->
+                    <div class="image one"></div>
+                    <div class="image two"></div>
+                    <div class="image three"></div>
+    
+                    <!-- border -->
+                    <div class="border"></div>
+                    <div class="border"></div>
+                    <div class="border"></div>
+            </section>
 
-            <div class="menu_container">
-                <div class="menu">
-                    <p>A B O U T</p>
-                </div>
-                <div class="menu">
-                    <p>P R O J E C T S</p>
-                </div>
-                <div class="menu">
-                    <p>E X P E R I E N C E</p>
-                </div>
-            </div>
-            
+
+            <section class="bubbles_container">
+                <a class="bubble"></a>
+                <a class="bubble"></a>
+                <a class="bubble"></a>
+            </section>
+
+
+            <section class="menu_container">
+                <button class="menu" onclick="window.location.assign('./index.html')">A B O U T</a>
+                <button class="menu" onclick="window.location.assign('./projects.html')">P R O J E C T S</a>
+                <button class="menu" onclick="window.location.assign('./experience.html')">E X P E R I E N C E</a>
+            </section>
         </nav>
-
-            <!-- linked in and email logo -->
-            <a href="https://www.linkedin.com/in/ronald12345/" class="logo linkedIn"></a>
-            <a href="mailto:ronaldyu001@gmail.com?" class="logo email"></a> 
-        </section>
     </main>
+    <footer class="logo_container">
+        <!-- linked in and email logo -->
+        <button class="logo linkedIn" onclick="window.location.assign('https://www.linkedin.com/in/ronald12345/')"></a>
+        <button class="logo email "onclick="window.location.assign('mailto:ronaldyu001@gmail.com?')"></a>         
+    </footer>
 </body>
 </html>

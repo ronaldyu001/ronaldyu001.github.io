@@ -11,7 +11,7 @@ Purpose:
 body{
     /* dimensions */
     width: 100vw;
-    height: 120vh;
+    height: 130vh;
 
     /* formatting */
     margin: 0;
@@ -22,10 +22,10 @@ body{
 footer{
     /* dimensions */
     width: auto;
-    height: auto;
+    height: 25%;
 
-    /* positioning */
-    justify-self: center;
+    /* children positioning */
+    align-content: center;
 }
 
 header{
@@ -148,6 +148,7 @@ pre{
     position: absolute;
     z-index: 1;
 
+    /* container */
     display: grid;
     grid-template-columns: 33% 34% 33%;
     grid-template-rows: .5% 99% .5%;

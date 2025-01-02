@@ -1,0 +1,48 @@
+<!------------------------------------------
+Purpose:
+    -   Provide the structure for the website's 
+        about page
+------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- metadata and resources -->
+<head>
+    <meta charset="UTF-8">                                                      <!-- ensure proper display of characters -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">      <!-- optimizes the page for mobile devices -->
+    <title>Ronald Yu - About</title>                                                    <!-- title to be displayed in browser tab -->
+    <link rel="stylesheet" href="./about.css">                                   <!-- link style.css to main.html -->
+</head>
+
+
+<!-- visible content -->
+<body>
+    <header>
+        <!-- Website Title -->
+        <h1><a class="initials">RY</a></h1>
+        <h2><a class="name"><pre>R o n a l d  Y u</pre></a></h2>
+        <h3><a class="location"><pre>Denver , CO</pre></a></h3>
+    </header>
+    <main>
+        <!-- about -->
+         <nav>
+            <input type="checkbox" id="expand_me" hidden>
+            <label for="expand_me" class="me_toggle_label">M E</label>
+            <p class="me_text" hidden>
+                My name is Ronald Yu, welcome to my website!
+            </p>
+
+            <input type="checkbox" id="expand_education" hidden>
+            <label for="expand_me" class="me_toggle_label">EDUCATION</label>
+
+            <input type="checkbox" id="expand_interests" hidden>
+            <label for="expand_me" class="me_toggle_label">INTERESTS</label>
+         </nav>
+    </main>
+    <footer>
+        <!-- home -->
+        <button class="home_button" onclick="window.location.assign('./index.html')"></button>
+    </footer>
+</body>

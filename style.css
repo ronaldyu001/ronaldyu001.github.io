@@ -21,7 +21,7 @@ body{
 
 footer{
     /* dimensions */
-    width: auto;
+    width: 100%;
     height: 15%;
 
     /* children positioning */
@@ -30,8 +30,8 @@ footer{
 
 header{
     /* dimensions */
-    width: 100vw;
-    height: 30vh;
+    width: 100%;
+    height: 30%;
 
     /* container info */
     display: grid;

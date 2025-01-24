@@ -26,20 +26,32 @@ Purpose:
         <h3><a class="location"><pre>Denver , CO</pre></a></h3>
     </header>
     <main>
-        <!-- about -->
+        <!-- main body (menu tabs, images, text) -->
          <nav>
-            <input type="checkbox" id="expand_me" hidden>
-            <label for="expand_me" class="me_toggle_label">M E</label>
-            <p class="me_text" hidden>
-                My name is Ronald Yu, welcome to my website!
-            </p>
+            <!-- tabs -->
+            <input type="radio" id="me" name="tabs" class="tab_input"  checked hidden>
+            <label for="me" class="tab_label"><p class="label_text">ME</p></label>
 
-            <input type="checkbox" id="expand_education" hidden>
-            <label for="expand_me" class="me_toggle_label">EDUCATION</label>
+            <input type="radio" id="education" name="tabs" class="tab_input" hidden>
+            <label for="education" class="tab_label center"><p class="label_text">EDUCATION</p></label>
 
-            <input type="checkbox" id="expand_interests" hidden>
-            <label for="expand_me" class="me_toggle_label">INTERESTS</label>
-         </nav>
+            <input type="radio" id="interests" name="tabs" class="tab_input" hidden>
+            <label for="interests" class="tab_label"><p class="label_text">INTERESTS</p></label>
+
+
+            <!-- main content -->
+            <section class="content_container">
+                <!-- images -->
+                <div id="me_image" class="" hidden></div>
+                <div id="education_image" class="" hidden></div>
+                <div id="interests_image" class="" hidden></div>
+
+                <!-- text -->
+                <p class="content_text" id="me_text" hidden>My name is Ronald Yu.</p>
+                <p class="content_text" id="education_text" hidden>I graduated from TAMU, going to CU Denver.</p>
+                <p class="content_text" id="interests_text" hidden>Lifting, guitar.</p>
+            </section>
+        </nav>
     </main>
     <footer>
         <!-- home -->

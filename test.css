@@ -1,0 +1,59 @@
+/* Body font and margin */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+/* tab size and margin */
+.tabs {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Hide radio buttons */
+.tab-input {
+  display: none;
+}
+
+/* Style tab labels */
+.tab-label {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #f0f0f0;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  cursor: pointer;
+  margin-right: -1px; /* Prevent double border */
+  transition: background 0.3s;
+}
+
+.tab-label:hover {
+  background: #ddd;
+}
+
+/* Highlight active tab */
+.tab-input:checked + .tab-label {
+  background: #fff;
+  border-bottom: 1px solid #fff;
+  font-weight: bold;
+}
+
+/* Tab content wrapper */
+.tab-content {
+  border: 1px solid #ccc;
+  padding: 20px;
+  background: #fff;
+}
+
+/* Hide all panels by default */
+.tab-panel {
+  display: none;
+}
+
+/* Show the panel corresponding to the checked input */
+#tab1:checked ~ .tab-content #content1,
+#tab2:checked ~ .tab-content #content2,
+#tab3:checked ~ .tab-content #content3 {
+  display: block;
+}

@@ -98,7 +98,6 @@ footer{
 
     /* font */
     font-family: 'Times New Roman', Times, serif;
-    font-weight: 100;
     color: white;
 
     /* dimensions */
@@ -124,8 +123,8 @@ nav{
 
     /* styling */
     box-sizing: border-box;
-    border-top: solid .1vw rgb(0, 0, 0, 0.8);
-    border-bottom: solid .1vw rgb(0, 0, 0, 0.8);
+    border-top: solid .1vw rgb(0, 0, 0, .8);
+    border-bottom: solid .1vw rgb(0, 0, 0, .8);
 
     /* dimensions */
     height: 100%;
@@ -179,6 +178,25 @@ nav{
     text-underline-offset: .5vw;
 }
 
+/* container settings for images */
+.content_image{
+    height: 100%;
+    width: 100%;
+
+    justify-self: center;
+    align-self: center;
+}
+
+/* me image */
+#me_image{
+    background-image: url("./backgrounds/Profile.png");
+
+    background-size: 210%;
+    background-repeat: no-repeat;
+    background-position: 75%;
+}
+
+
 /* show tab image when respective tab selected */
 #me:checked ~ .content_container #me_image,
 #education:checked ~ .content_container #education_image,
@@ -203,10 +221,10 @@ nav{
     make container span all columns of parent grid */
 .content_container{
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 50% 50%;
     grid-column: 1/-1;
 
-    border-top: solid .1vw rgb(0, 0, 0, 0.8);
+    border-top: solid .05vw rgb(0, 0, 0, 0.8);
 
     height: 100%;
 }
@@ -218,8 +236,8 @@ nav{
 *****************************/
 .home_button{
     /* dimensions */
-    height: 4vw;
-    width: 4vw;
+    height: 3vw;
+    width: 3vw;
     padding: 0;
     margin: 0;
     border: none;
@@ -228,15 +246,16 @@ nav{
     display: flex;
     justify-self: center;
 
-    /* appearance */
+    /* make home button background transparent */
     background-color: rgb(0, 0, 0, 0);
     background-image: url("./backgrounds/white_home_1.png");
-    background-size: 4vw;
+    background-size: 3vw;
 
-    /* hover settings */
-    transition: 0.5s;
+    /* hover transition time */
+    transition: 0.7s;
 }
 
+/* home button gets bigger when hovered */
 .home_button:hover{
     transform: scale(1.2);
 }
